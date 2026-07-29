@@ -13,7 +13,7 @@ Learn more at: https://aimlinterviews.io
 
 ---
 
-This repo aims to serve as a guide to prepare for **Machine Learning (AI) Engineering** interviews for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer).
+This repo aims to serve as a guide to prepare for **AI and ML Technical interviews** for relevant roles at big tech companies (in particular FAANG). It has compiled based on the author's personal experience and notes from his own interview preparation, when he received 5 simultaneous offers from Meta (ML Specialist), Google (ML Engineer), Amazon (Applied Scientist), Apple (Applied Scientist), and Roku (ML Engineer) in 2020, and repeated offers from Amazon and Apple in 2025 (AI Tech Lead).
 
 The following components are the most commonly used interview modules for technical ML roles at different companies. We will go through them one by one and share how one can prepare:
 
@@ -23,7 +23,7 @@ The following components are the most commonly used interview modules for techni
  |---| --- |
  | Chapter 1 	|  [General Coding - DSA (Data Structures and Algorithms)](src/lc-coding.md)	   | 
 | Chapter 2 	| [ML Coding](src/MLC/ml-coding.md) 	|  	
-| Chapter 3	| [ML Fundamentals/Breadth (Updated for 2026: LLMs, multimodal AI)](src/ml-fundamental.md)| 
+| Chapter 3	| [ML Fundamentals/Breadth (classic ML, LLMs, multimodal AI, and more)](src/ml-fundamental.md)| 
 | Chapter 4 	| [ML/GenAI/LLM System Design](src/MLSD/ml-system-design.md)|
 | Chapter 5 	| [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git)|
 | Chapter 6 	| [Behavioral Interviews](src/behavior.md)| 
@@ -32,12 +32,14 @@ The following components are the most commonly used interview modules for techni
 </center>
 
 **Notes:**
-* AI / ML interviews at different companies do not follow a unique structure unlike SWE interviews. However, I found some of the components very similar to each other, although under different naming.
+* AI & ML interviews at different companies do not follow a normalized structure (unlike SWE interviews). In particular in today's fast growing world of AI, each company has their own priorities in evaluating candidates for different AI roles. However, you can find some of the components are very similar to each other, although under different naming. As usual with SWE interviews, there are certain patterns and topics that keep coming up in such interviews. 
 
-* The guide here is mostly focused on *Machine Learning Engineer* (and Applied Scientist) roles at big companies. Although relevant roles such as "Data Science" or "ML research scientist" have different structures in interviews, some of the modules reviewed here can be still useful. 
-<!-- For more understanding about different technical roles within ML umbrella you can refer to [Link](https://www.linkedin.com/pulse/machine-learning-engineer-vs-applied-scientist-whats-difference-suresh/) -->
+* The guide here is mostly focused on *AI / ML Engineering, Applied Science, Tech Lead* roles at big companies. Although relevant roles such as "Data Science" or "Research scientist" have different structures in interviews, some of the modules reviewed here can be still useful. 
 
-:newspaper: **News: Updated for 2026**: Chapters 3 and 4 now cover the latest **GenAI / LLM** interview topics — foundation models & LLM internals (KV cache, GQA, RoPE, MoE), **post-training algorithms** (SFT, DPO, GRPO, RLVR, …), **PEFT & inference optimization**, **multimodal AI** (VLMs, **VLAs**, diffusion vs autoregressive), and **GenAI system design** (RAG, agents, guardrails, eval). For deeper agentic content, see the dedicated [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git) repo, with resources, system design summaries, and hands-on coding examples and projects. 
+:newspaper: **Updates for 2026**: 
+* As you may have noticed, a great portion of SW and applied science engineering roles in AI domain (faster than other domains) are going under significant changes, and traditional AI/ML roles are either merging, being re-purposed or some disappearing, and some new roles are emerging, at the same time. The most important, challenging, and yet exciting part of this for interview candidates is to 1/ stay on top of technology as much as they can, and 2/ build and demonstrate hands-on work more than ever.
+   
+* Chapters 3 and 4 now cover the latest **GenAI / LLM** interview topics — foundation models & LLM internals (KV cache, GQA, RoPE, MoE), **post-training algorithms** (SFT, DPO, GRPO, RLVR, …), **PEFT & inference optimization**, **multimodal AI** (VLMs, **VLAs**, diffusion vs autoregressive), and **GenAI system design** (RAG, agents, guardrails, eval). For deeper agentic content, see the dedicated [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git) repo, with resources, system design summaries, and hands-on coding examples and projects. 
 
 
 # Contribution
