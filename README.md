@@ -28,13 +28,15 @@ The following components are the most commonly used interview modules for techni
 
 ## News
 
+I now offer **1:1 AI/ML interview coaching & mock interviews** for AI/ML Engineers, Applied AI Scientists, Research Engineers, Research Scientists, AI Strategists, Engineering Managers, and senior AI leaders.
+
+Topics include technical interviews (AI/ML system design, GenAI & Agentic AI fundamentals, ML fundamentals, AI coding, and more), behavioral interviews, and leadership interviews.
+
+Learn more: [https://aimlinterviews.io](https://aimlinterviews.io)
+
+---
+
 :newspaper: This repository is now **AIMLInterviews**, updated for 2026 with expanded LLM, multimodal AI, post-training, and GenAI system-design content.
-
-:newspaper: I now offer limited 1:1 AI/ML interview coaching for AI/ML Engineers, Applied AI Engineers & Scientists, Research Engineers, Research Scientists, AI Strategists, Engineering Managers, and senior AI leaders.
-
-Topics include ML/AI system design, LLMs & Agentic AI, technical interviews, behavioral interviews, and leadership interviews.
-
-Learn more at: https://aimlinterviews.io
 
 **Notes:**
 * AI and ML interviews at different companies do not follow a unique structure. However, I found the components very similar across FAANG companies. Startup interviews are often tailored to their own use cases and problems at hand, while larger companies tend to follow a more consistent structure.
