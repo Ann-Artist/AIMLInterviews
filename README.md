@@ -2,6 +2,8 @@
 <img width="720" src="src/imgs/cover.png">
 </p>
 
+English | [简体中文](README-CN.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Code style: black](https://img.shields.io/badge/code%20style-black-000.svg)](https://github.com/psf/black) [![GitHub stars](https://img.shields.io/github/stars/alirezadir/AIMLInterviews?style=social)](https://github.com/alirezadir/AIMLInterviews/stargazers) [![GitHub forks](https://img.shields.io/github/forks/alirezadir/AIMLInterviews?style=social)](https://github.com/alirezadir/AIMLInterviews/network) [![Last Commit](https://img.shields.io/github/last-commit/alirezadir/AIMLInterviews)](https://github.com/alirezadir/AIMLInterviews/commits/main) [![GitHub issues](https://img.shields.io/github/issues/alirezadir/AIMLInterviews)](https://github.com/alirezadir/AIMLInterviews/issues) [![Contributors](https://img.shields.io/github/contributors/alirezadir/AIMLInterviews)](https://github.com/alirezadir/AIMLInterviews/graphs/contributors) [![Tweet](https://img.shields.io/twitter/url?label=Share%20on%20X&url=https%3A%2F%2Fgithub.com%2Falirezadir%2FAIMLInterviews&style=social)](https://twitter.com/intent/tweet?text=Check%20out%20AIMLInterviews%20by%20%40alirezadira%20%E2%80%94%20A%20guide%20to%20prepare%20for%20AI%2FML%20interviews!&url=https%3A%2F%2Fgithub.com%2Falirezadir%2FAIMLInterviews&hashtags=MachineLearning,MLinterviews,AI)
 # AI / Machine Learning Interviews :robot: 
 
