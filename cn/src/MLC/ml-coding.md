@@ -9,6 +9,18 @@ ML 编码面试因公司而异。有些更关注从零实现经典算法，另�
 - 将较早的 [notebooks](./notebooks/) 用作补充性的探索材料。其中一些早于权威解法，可能不够完整。
 - 练习在不看参考实现的情况下写出每个重点题目，然后对比正确性、复杂度和边界情况处理。
 
+## 难度与公司标签
+
+所有编程题均使用 LeetCode 风格的难度标签：
+
+- **简单（Easy）：** 通常只涉及一个核心操作、状态较少，预计可在 15 分钟左右完成。
+- **中等（Medium）：** 包含多个步骤或较复杂的边界情况；完整、可靠的面试实现通常需要 20–35 分钟。
+- **困难（Hard）：** 通常需要 40–60 分钟以上，涉及多个组件协作、高级调试或系统层面的权衡。
+
+难度标签是针对本仓库完整题目的编辑判断，并不表示所有参考来源都会对相近题目给出完全相同的评级。能精确匹配的题目会参考 [TorchLeet](https://github.com/Exorust/TorchLeet) 与 [Deep-ML](https://www.deep-ml.com/problems) 进行校准；没有匹配来源的题目，则按同一套标准评定。如果参考来源之间存在分歧，以本仓库题目的范围和边界条件要求为准。
+
+只有当参考来源把某家公司与同一道实现题明确关联时，才会添加公司标签。这些标签仅表示历史上的面试准备信号，并不保证该公司当前仍会考察此题。本仓库只使用元数据事实，不复制第三方题目描述或解答。
+
 在仓库根目录运行参考测试：
 
 ```bash
@@ -30,43 +42,43 @@ uv run --with numpy python src/MLC/solutions/test_ml_algorithms.py
 
 下面这组题目结合了仍然常见的经典问题，以及在 AI/ML 面试中越来越常被要求掌握的现代基础能力。
 
-| 题目 | 权威解法 | 补充 notebook | 一个优秀解法应覆盖的内容 |
-| --- | --- | --- | --- |
-| 数值稳定的 softmax 和交叉熵 | `softmax`, `cross_entropy_from_logits` | — | 最大值平移、log-sum-exp、shape、类别索引校验 |
-| 使用梯度下降的线性回归 | `linear_regression_gradient_descent` | [Linear regression](./notebooks/linear_regression_md.ipynb) | 向量化梯度、偏置项、MSE 缩放、收敛性 |
-| 使用梯度下降的逻辑回归 | `logistic_regression_gradient_descent` | [Logistic regression](./notebooks/logistic_regression_md.ipynb) | 稳定的 sigmoid、二元交叉熵梯度、阈值 |
-| k 最近邻 | `knn_predict` | [k-NN](./notebooks/k_nearest_neighbors.ipynb) | 成对距离、top-k 选择、平票处理、复杂度 |
-| k-means 聚类 | `kmeans` | [k-means](./notebooks/k_means_2.ipynb) | 初始化、向量化分配、收敛、空簇 |
-| 决策树划分 | `gini_impurity`, `best_gini_split` | [Decision tree](./notebooks/decision_tree.ipynb) | 候选阈值、加权不纯度、停止条件 |
-| 主成分分析 | `principal_component_analysis` | — | 中心化、SVD/特征分解、主成分排序、方差 |
-| 二维卷积 | `conv2d_valid` | [Convolution](./notebooks/convolution.ipynb) | 输出 shape、步幅、互相关与卷积的区别 |
-| 缩放点积注意力 | `scaled_dot_product_attention` | — | Q/K/V 的 shape、`1/sqrt(d_k)`、在稳定 softmax 前做 mask |
-| 二分类指标与 ROC-AUC | `binary_classification_metrics`, `roc_auc` | — | 分母为零、类别不平衡、平票、排序解释 |
-| 蓄水池抽样 | `reservoir_sample` | — | 流长度未知、均匀概率、O(k) 内存 |
-| TF-IDF | `tfidf` | — | token 计数、文档频率、平滑、稀疏缩放 |
+| 题目 | 难度 | 公司标签 | 权威解法 | 补充 notebook | 一个优秀解法应覆盖的内容 |
+| --- | --- | --- | --- | --- | --- |
+| 数值稳定的 softmax 和交叉熵 | 简单（Easy） | Apple, Meta, Google, Amazon | `softmax`, `cross_entropy_from_logits` | — | 最大值平移、log-sum-exp、shape、类别索引校验 |
+| 使用梯度下降的线性回归 | 中等（Medium） | — | `linear_regression_gradient_descent` | [Linear regression](./notebooks/linear_regression_md.ipynb) | 向量化梯度、偏置项、MSE 缩放、收敛性 |
+| 使用梯度下降的逻辑回归 | 困难（Hard） | Google, Meta, Amazon | `logistic_regression_gradient_descent` | [Logistic regression](./notebooks/logistic_regression_md.ipynb) | 稳定的 sigmoid、二元交叉熵梯度、阈值 |
+| k 最近邻 | 中等（Medium） | Uber, LinkedIn, Meta | `knn_predict` | [k-NN](./notebooks/k_nearest_neighbors.ipynb) | 成对距离、top-k 选择、平票处理、复杂度 |
+| k-means 聚类 | 中等（Medium） | Uber, LinkedIn, Google, Amazon | `kmeans` | [k-means](./notebooks/k_means_2.ipynb) | 初始化、向量化分配、收敛、空簇 |
+| 决策树划分 | 中等（Medium） | — | `gini_impurity`, `best_gini_split` | [Decision tree](./notebooks/decision_tree.ipynb) | 候选阈值、加权不纯度、停止条件 |
+| 主成分分析 | 中等（Medium） | — | `principal_component_analysis` | — | 中心化、SVD/特征分解、主成分排序、方差 |
+| 二维卷积 | 中等（Medium） | — | `conv2d_valid` | [Convolution](./notebooks/convolution.ipynb) | 输出 shape、步幅、互相关与卷积的区别 |
+| 缩放点积注意力 | 中等（Medium） | — | `scaled_dot_product_attention` | — | Q/K/V 的 shape、`1/sqrt(d_k)`、在稳定 softmax 前做 mask |
+| 二分类指标与 ROC-AUC | 中等（Medium） | — | `binary_classification_metrics`, `roc_auc` | — | 分母为零、类别不平衡、平票、排序解释 |
+| 蓄水池抽样 | 中等（Medium） | — | `reservoir_sample` | — | 流长度未知、均匀概率、O(k) 内存 |
+| TF-IDF | 中等（Medium） | — | `tfidf` | — | token 计数、文档频率、平滑、稀疏缩放 |
 
 所有权威函数都在 [`solutions/ml_algorithms.py`](./solutions/ml_algorithms.py) 中。
 
 ## 其他经典算法
 
-这些题目也很适合作为后续练习，尤其是在它们与目标团队的业务领域匹配时：
+这些题适合作为延伸练习，尤其适合目标团队业务方向与其相关时：
 
-- 线性 SVM 和 hinge loss（[notebook](./notebooks/svm.ipynb)）
-- 感知机学习规则（[notebook](./notebooks/perceptron.ipynb)）
-- 前馈神经网络与反向传播（[notebook](./notebooks/feedforward.ipynb)）
-- 指标和损失的多分类或多标签扩展
-- 用于文本分类的朴素贝叶斯
-- 用于推荐系统的矩阵分解
-- 梯度提升：解释训练循环，并实现一个简单的残差拟合步骤
+- 线性 SVM 与 hinge loss（[notebook](./notebooks/svm.ipynb)）— **难度：** 中等（Medium）
+- 感知机学习规则（[notebook](./notebooks/perceptron.ipynb)）— **难度：** 简单（Easy）
+- 前馈神经网络与反向传播（[notebook](./notebooks/feedforward.ipynb)）— **难度：** 困难（Hard）
+- 指标与 loss 的多分类或多标签扩展 — **难度：** 中等（Medium）
+- 用于文本分类的朴素贝叶斯 — **难度：** 中等（Medium）
+- 用于推荐系统的矩阵分解 — **难度：** 中等（Medium）
+- 梯度提升：解释训练循环，并实现一个简单的残差拟合步骤 — **难度：** 困难（Hard）
 
 ## 数据与采样问题
 
-- 实现无泄漏的训练集/验证集/测试集划分
-- 仅使用训练集统计量对特征做标准化
-- 一致地处理缺失值和未见类别
-- 实现均匀采样、分层采样、加权采样和蓄水池抽样
-- 构建 mini-batch，并对变长序列进行 padding
-- 正确聚合按样本加权的损失和流式指标
+- 在不发生数据泄漏的前提下，实现训练集/验证集/测试集划分 — **难度：** 简单（Easy）
+- 只使用训练集统计量做特征标准化 — **难度：** 简单（Easy）
+- 以一致方式处理缺失值和未见过的类别 — **难度：** 中等（Medium）
+- 实现均匀抽样、分层抽样、加权抽样与蓄水池抽样 — **难度：** 中等（Medium）
+- 构建 mini-batch，并对变长序列做 padding — **难度：** 中等（Medium）
+- 正确聚合按样本加权的 loss 与流式指标 — **难度：** 中等（Medium）
 
 ## 面试中应该说明什么
 
