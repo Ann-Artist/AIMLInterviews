@@ -24,9 +24,22 @@ The following components are the most commonly used interview modules for techni
 | Chapter 5 	| [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git)|
 | Chapter 6 	| [Behavioral Interviews](src/behavior.md)| 
 | Resources 	| [GenAI Learning Resources](src/genai-resources.md)|
+| AI Tutor 	| [AIMLInterviews MCP Server](MCP/README.md)|
 |  	|  	|  
 
 </center>
+
+## AI Tutor with MCP
+
+Turn any MCP-compatible AI assistant into an AI/ML interview coach with `aimlinterviews-mcp`. It discovers curriculum problems, offers progressive hints, builds learning and company preparation plans, and reviews answers using a no-spoilers teaching style.
+
+```bash
+claude mcp add aimlinterviews -- npx -y aimlinterviews-mcp
+# or
+codex mcp add aimlinterviews -- npx -y aimlinterviews-mcp
+```
+
+Clone this repository first, then run the command from the clone or set `AIMLINTERVIEWS_ROOT`. See the [MCP server guide](MCP/README.md) for configuration, tools, and development instructions.
 
 ## News
 
