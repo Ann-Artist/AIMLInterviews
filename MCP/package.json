@@ -4,7 +4,7 @@
   "description": "MCP server that turns AI assistants into spoiler-safe AI/ML interview tutors using the AIMLInterviews curriculum",
   "type": "module",
   "bin": {
-    "aimlinterviews-mcp": "./dist/src/index.js"
+    "aimlinterviews-mcp": "dist/src/index.js"
   },
   "main": "./dist/src/index.js",
   "types": "./dist/src/server.d.ts",
