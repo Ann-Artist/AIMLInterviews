@@ -1,5 +1,7 @@
 # Behavioral Interviews 
 
+It is important to prepare stories from your past work experience for common behavioral and leadership questions ahead of time, using the **STAR format** (Situation, Task, Action, Result). The [Behavioral & Leadership Interview Prep Worksheet](Behavioral%20%26%20Leadership%20Interview%20Prep%20Template.xlsx) includes many of the most popular questions, and working through it before your interviews is highly recommended.
+
 ## STAR Method 
 [How to Answer Common Situational Interview Questions](https://www.interviewkickstart.com/career-advice/situational-scenario-based-interview-questions-answers)
 

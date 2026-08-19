@@ -22,7 +22,7 @@ The following components are the most commonly used interview modules for techni
 | Chapter 3	| [ML Fundamentals/Breadth (classic ML, LLMs, multimodal AI, and more)](src/ml-fundamental.md)| 
 | Chapter 4 	| [ML/GenAI/LLM System Design](src/MLSD/ml-system-design.md)|
 | Chapter 5 	| [Agentic AI Systems](https://github.com/alirezadir/Agentic-AI-Systems.git)|
-| Chapter 6 	| [Behavioral Interviews](src/behavior.md)| 
+| Chapter 6 	| [Behavioral Interviews](src/behavioral/behavior.md) · [Behavioral & Leadership Prep Worksheet](src/behavioral/Behavioral%20%26%20Leadership%20Interview%20Prep%20Template.xlsx)|
 | Resources 	| [GenAI Learning Resources](src/genai-resources.md)|
 | AI Tutor 	| [AIMLInterviews MCP Server](MCP/README.md)|
 |  	|  	|  
