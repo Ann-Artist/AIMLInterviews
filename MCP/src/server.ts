@@ -6,7 +6,7 @@ import { resolveRepositoryRoot } from "./repository.js";
 import { TutorService } from "./service.js";
 import { AREAS } from "./types.js";
 
-export const SERVER_VERSION = "0.1.0";
+export const SERVER_VERSION = "0.1.1";
 
 export interface CreateServerOptions {
   repositoryRoot?: string;

@@ -43,7 +43,7 @@ export function createFixtureRepository(): string {
       "## System Design Sample Questions",
       "- Design a production recommendation system?",
     ].join("\n"),
-    "src/behavior.md": [
+    "src/behavioral/behavior.md": [
       "# Behavioral",
       "## Common Questions",
       "- Tell me about a difficult technical decision?",

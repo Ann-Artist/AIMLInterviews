@@ -14,8 +14,9 @@ const REQUIRED_PATHS = [
   "src/MLC/ml-coding.md",
   "src/ml-fundamental.md",
   "src/MLSD/ml-system-design.md",
-  "src/behavior.md",
 ];
+
+const BEHAVIOR_PATHS = ["src/behavior.md", "src/behavioral/behavior.md"];
 
 const MAX_SOURCE_BYTES = 2 * 1024 * 1024;
 
@@ -90,7 +91,10 @@ export function readRepositoryFile(root: string, relativePath: string): string {
 }
 
 function looksLikeRepository(directory: string): boolean {
-  return REQUIRED_PATHS.every((path) => existsSync(join(directory, path)));
+  return (
+    REQUIRED_PATHS.every((path) => existsSync(join(directory, path))) &&
+    BEHAVIOR_PATHS.some((path) => existsSync(join(directory, path)))
+  );
 }
 
 function walk(directory: string, root: string, output: string[]): void {

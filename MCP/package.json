@@ -1,6 +1,6 @@
 {
   "name": "aimlinterviews-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server that turns AI assistants into spoiler-safe AI/ML interview tutors using the AIMLInterviews curriculum",
   "type": "module",
   "bin": {
